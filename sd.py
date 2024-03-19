@@ -8,23 +8,23 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 port_stem = PorterStemmer()
 import time
 from pygoogletranslation import Translator
-import smtplib
-import ssl
-from email.message import EmailMessage
+# import smtplib
+# import ssl
+# from email.message import EmailMessage
 
 
-from_email = "hamidrezabahrami455@gmail.com"
-to_email = "hamidr.bahraami@gmail.com"
-email_password = "cigy jwmz fuyi tdcm"
-#subject = "شناسایی کابر متمایل به خودکشی"
-#body = (f"کاربر در حال خودکشی شناسایی شد", number)
-#em = EmailMessage()
-#em['From'] = from_email
-#em['To'] = to_email
-#em['subject'] = subject
-#em.set_content(body)
+# from_email = "hamidrezabahrami455@gmail.com"
+# to_email = "hamidr.bahraami@gmail.com"
+# email_password = "cigy jwmz fuyi tdcm"
+# #subject = "شناسایی کابر متمایل به خودکشی"
+# #body = (f"کاربر در حال خودکشی شناسایی شد", number)
+# #em = EmailMessage()
+# #em['From'] = from_email
+# #em['To'] = to_email
+# #em['subject'] = subject
+# #em.set_content(body)
 
-context = ssl.create_default_context()
+# context = ssl.create_default_context()
 
 vector = pickle.load(open('vector.pkl', 'rb'))
 load_model = pickle.load(open('model.pkl', 'rb'))
@@ -75,16 +75,16 @@ def show_page():
                         st.write("<h4 style='text-align: right; color: gray;'>.بر اساس تحلیل من، شما به خودکشی تمایل دارید</h4>", unsafe_allow_html=True)
                         st.write("<h4 style='text-align: right; color: gray;'>.برای تسکین فوری افکار خود با فردی از نزدیکان صحبت کنید</h4>", unsafe_allow_html=True)
                         st.write("<h4 style='text-align: right; color: gray;'>.و برای درمان قطعی به روانشناس مراجعه کنید</h4>", unsafe_allow_html=True)
-                        subject = number
-                        body = ("کاربر در حال خودکشی شناسایی شد")
-                        em = EmailMessage()
-                        em['From'] = from_email
-                        em['To'] = to_email
-                        em['subject'] = subject
-                        em.set_content(body)
-                        with smtplib.SMTP_SSL('smtp.gmail.com', 465, context= context) as smtp:
-                            smtp.login(from_email, email_password)
-                            smtp.sendmail(from_email, to_email, em.as_string())
+                        # subject = number
+                        # body = ("کاربر در حال خودکشی شناسایی شد")
+                        # em = EmailMessage()
+                        # em['From'] = from_email
+                        # em['To'] = to_email
+                        # em['subject'] = subject
+                        # em.set_content(body)
+                        # with smtplib.SMTP_SSL('smtp.gmail.com', 465, context= context) as smtp:
+                        #     smtp.login(from_email, email_password)
+                        #     smtp.sendmail(from_email, to_email, em.as_string())
                         
             else:
                 with st.chat_message("assistant"):
