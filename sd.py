@@ -78,7 +78,6 @@ def show_page():
                     with st.spinner('''درحال بررسی لطفا صبور باشید'''):
                         time.sleep(3)
                         st.success(u'\u2713''تحلیل انجام شد')
-                        st.write(prediction_class)
                         st.write("<h4 style='text-align: right; color: gray;'>.بر اساس تحلیل من، شما به خودکشی تمایل دارید</h4>", unsafe_allow_html=True)
                         st.write("<h4 style='text-align: right; color: gray;'>.برای تسکین فوری افکار خود با فردی از نزدیکان صحبت کنید</h4>", unsafe_allow_html=True)
                         st.write("<h4 style='text-align: right; color: gray;'>.و برای درمان قطعی به روانشناس مراجعه کنید</h4>", unsafe_allow_html=True)
@@ -98,7 +97,6 @@ def show_page():
                     with st.spinner('''درحال بررسی لطفا صبور باشید'''):
                         time.sleep(3)
                         st.success(u'\u2713''تحلیل انجام شد')
-                        st.write(prediction_class)
                         st.write("<h4 style='text-align: right; color: gray;'>.بر اساس تحلیل من، بیشتر افکار شما سالم است</h4>", unsafe_allow_html=True)
                         st.write("<h4 style='text-align: right; color: gray;'>.در صورت وجود افکار متمایل به خودکشی، به روانشناس مراجعه کنید</h4>", unsafe_allow_html=True)
     else:
