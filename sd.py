@@ -52,7 +52,7 @@ def show_page():
     st.write("<h4 style='text-align: center; color: gray;'>Robo-Ai.ir طراحی شده توسط</h4>", unsafe_allow_html=True)
     st.link_button("Robo-Ai بازگشت به", "https://robo-ai.ir")
 
-    number = st.text_input('لطفا شماره تماس خود را وارد کنید')
+    #number = st.text_input('لطفا شماره تماس خود را وارد کنید')
     text = st.text_area('افکار خود را با من درمیان بگذارید',height=None,max_chars=None,key=None)
     
     if st.button('تحلیل افکار'):
