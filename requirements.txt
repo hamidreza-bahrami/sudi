@@ -1,5 +1,6 @@
 nltk==3.8.1
 numpy==1.26.4
+googletrans==4.0.0rc1
 pygoogletranslation==2.0.6
 scikit_learn==1.4.1.post1
 streamlit==1.32.2
