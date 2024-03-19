@@ -18,7 +18,7 @@ except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context
-# nltk.download('stopwords')
+nltk.download('stopwords')
 
 from_email = "hamidrezabahrami455@gmail.com"
 to_email = "hamidr.bahraami@gmail.com"
