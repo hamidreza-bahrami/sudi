@@ -56,7 +56,7 @@ def thought(text):
 def show_page():
     st.write("<h1 style='text-align: center; color: blue;'>مدل تشخیص تمایل به خودکشی</h1>", unsafe_allow_html=True)
     st.write("<h2 style='text-align: center; color: gray;'>تشخیص بر اساس تحلیل متن کاربر</h2>", unsafe_allow_html=True)
-    st.write("<h4 style='text-align: center; color: gray;'>Robo-Ai.ir طراحی شده توسط</h4>", unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center; color: gray;'>طراح: حمیدرضا بهرامی</h4>", unsafe_allow_html=True)
     st.link_button("Robo-Ai بازگشت به", "https://robo-ai.ir")
 
     number = st.text_input('لطفا شماره تماس خود را وارد کنید')
