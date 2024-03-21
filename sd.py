@@ -31,7 +31,7 @@ email_password = "cigy jwmz fuyi tdcm"
 # #em['subject'] = subject
 # #em.set_content(body)
 
-# context = ssl.create_default_context()
+context = ssl.create_default_context()
 
 vector = pickle.load(open('vector.pkl', 'rb'))
 load_model = pickle.load(open('model.pkl', 'rb'))
