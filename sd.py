@@ -22,7 +22,7 @@ nltk.download('stopwords')
 
 from_email = "hamidrezabahrami455@gmail.com"
 to_email = "hamidr.bahraami@gmail.com"
-email_password = "cigy jwmz fuyi tdcm"
+email_password = "htth eind kniy bgst"
 # #subject = "شناسایی کابر متمایل به خودکشی"
 # #body = (f"کاربر در حال خودکشی شناسایی شد", number)
 # #em = EmailMessage()
