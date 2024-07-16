@@ -105,8 +105,6 @@ def show_page():
     if st.button("پاکسازی حافظه"):
         st.cache_data.clear()
         st.rerun()
-        
-
 show_page()
 
 
